@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/menu.css">
+  <title>Sterfany Araújo</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <div class="logo-container">
+              <img class="logo-img" src="assets/img/SA Branco.png" alt="img">
+            </div>
+          </a>
+        </div>
+        <div class="nav-list">
+          <ul id="nav-items">
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#projects" data-after="Projects">Procedimentos</a></li>
+            <li><a href="#about" data-after="About">Sobre</a></li>
+            <li><a
+                href="https://www.mixdesigner.net.br/?srsltid=AfmBOopTtZ8avqa8H8RDPKg-5eqku4MDMVWHtR3mmY9rttZ3zy1MyccS">Shop</a>
+            </li>
+            <li><a href="#contact" data-after="Contact">Contato</a></li>
+            <li><a class="cta-a" href="#contact" data-after="Contact">Cursos</a></li>
+          </ul>
+        </div>
+
+        <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+        <label class="close-menu-label" for="close-menu" title="close menu"></label>
+
+        <aside class="menu">
+          <div class="main-content menu-content">
+            <nav>
+              <ul id="menu-items" onclick="document.getElementById('close-menu').checked = false;">
+
+              </ul>
+            </nav>
+          </div>
+        </aside>
+
+        <script>
+
+          const navItems = document.getElementById('nav-items').cloneNode(true);
+          const menuItems = document.getElementById('menu-items');
+
+
+          const itemTexts = ['Home', 'Procedimentos', 'Sobre', 'Shop', 'Contato', 'Cursos'];
+          const listItems = navItems.getElementsByTagName('li');
+
+          for (let i = 0; i < listItems.length; i++) {
+            const link = listItems[i].getElementsByTagName('a')[0];
+            link.textContent = itemTexts[i];
+          }
+
+          menuItems.appendChild(navItems);
+        </script>
+
+
+      </div>
+    </div>
+
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+
+      <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>Autoestima sem limites, </h1>
+        <h1>Transformação em cada traço. </h1>
+
+        <!-- <h1>Celebramos a sua singularidade, elevando sua beleza e confiança a um novo patamar. <span></span></h1> -->
+
+        <a href="https://wa.me/5579988381834?text=Ol%C3%A1%2C+gostaria+de+um+or%C3%A7amento+para+..." type="button"
+          class="cta">Saiba Mais</a>
+
+      </div>
+
+
+    </div>
+
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- Service Section -->
+  <!-- <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title"><span>Procedimentos</span></h1>
+        <p></p>
+      </div>
+      <div class="service-bottom">
+        <div class="service-item">
+          <div class="icon"><img src="assets/img/sobrancelha.jpeg" /></div>
+          <h2>Landing Page</h2>
+          <p> A Landing Page é uma ferramenta eficaz para direcionar visitantes a uma oferta específica. Com design
+            focado e conteúdo direto, ela maximiza a conversão de leads, proporcionando uma experiência que captura a
+            atenção do usuário e o direciona de maneira eficiente.</p>
+        </div>
+
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>E-commerce</h2>
+          <p>O E-commerce oferece uma plataforma completa para impulsionar suas vendas online, com compras convenientes,
+            ampla variedade de produtos, métodos de pagamento seguros e disponibilidade 24/7, proporcionando uma
+            experiência de compra sem complicações e expandindo o alcance da sua marca.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Sites em geral</h2>
+          <p>Oferecemos serviços especializados na criação de sites modernos e personalizados para todos os tipos de
+            negócios. Nosso foco é garantir uma experiência intuitiva e eficaz para os usuários, combinando design
+            inovador com tecnologia avançada para atender aos objetivos estratégicos da sua empresa online.</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- End Service Section -->
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+
+      <div class="projects-header">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 class="section-title"><span>Procedimentos</span></h1>
+      </div>
+
+      <div class="all-projects">
+
+        <div class="project-item">
+          <div class="project-info">
+
+            <h2>Fio a Fio</h2>
+            <p>Desenhamos fios na região das sobrancelhas (pele) que dão volume e preenchimento de forma extremamente
+              natural!</p>
+              <a href="procedures.html" type="button"
+              class="cta">Saiba mais</a>
+          </div>
+          <div class="project-img">
+            <img src="assets/img/fioafio.jpeg" alt="img">
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-info">
+
+            <h2>Fio e Sombra</h2>
+            <p>No ínicio e parte superior das sobrancelhas trazemos os fios que remete a naturalidade, e na parte
+              inferior (calda) trazemos a sombra para deixar as sobrancelhas mais definidas e preenchidas!</p>
+            <a href="procedures.html" type="button"
+              class="cta">Saiba Mais</a>
+          </div>
+          <div class="project-img">
+            <img src="assets/img/fio e sombra.jpeg" alt="img">
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-info">
+
+            <h2>Sombra (Shadow)</h2>
+            <p>Mais detalhes aqui sobre o procedimento xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+            <br>
+            <a href="procedures.html" type="button"
+              class="cta">Saiba Mais</a>
+          </div>
+          <div class="project-img">
+            <img src="assets/img/Shadow.jpeg" alt="img">
+          </div>
+        </div>
+
+        <!-- <div class="project-item">
+          <div class="project-info">
+
+            <h2>X</h2>
+            <p>xx</p>
+            <a href="">view website</a>
+          </div>
+          <div class="project-img">
+            <img src="xxx" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+
+            <h2>X</h2>
+            <p>xxx</p>
+
+            <a href="https://emanikor.github.io/coffee-shop/">view website</a>
+          </div>
+          <div class="project-img">
+            <a href="#"> <img src="./img/about-image.png" alt="img"></a>
+          </div>
+        </div> -->
+
+
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="assets/img/perfil.jpeg" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">Sobre</h1>
+        <br>
+        <br>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+          id est laborum."</p>
+
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title"><span>Contato</span></h1>
+      </div>
+      <br>
+      <br>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+          <div class="contact-info">
+            <h1>Telefone / Whatsapp</h1>
+            <h2></h2>
+
+          </div>
+        </div>
+        <!-- <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>corneliusekai72@gmail.com</h2>
+            <h2>emanikor@zetech.ac.ke</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>00100 , nairobi</h2>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <div class="logo-container">
+          <img class="logo-img" src="assets/img/NOVO LOGO COMPLETO.png" alt="img">
+
+          <p>Copyright © 2024 Sterfany Araújo. All rights reserved</p>
+        </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+</body>
+
+</html>

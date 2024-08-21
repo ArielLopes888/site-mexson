@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styleProcedure.css">
+  <link rel="stylesheet" href="assets/css/menu.css">
+  <title>Sterfany Araújo / Procedimentos </title>
+</head>
+
+<body>
+
+ <!-- Header -->
+ <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <div class="logo-container">
+              <img class="logo-img" src="assets/img/SA Branco.png" alt="img">
+            </div>
+          </a>
+        </div>
+        <div class="nav-list">
+          <ul id="nav-items">
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#services" data-after="Service">Procedimentos</a></li>
+            <li><a
+                href="https://www.mixdesigner.net.br/?srsltid=AfmBOopTtZ8avqa8H8RDPKg-5eqku4MDMVWHtR3mmY9rttZ3zy1MyccS">Shop</a>
+            </li>
+            <li><a href="#contact" data-after="Contact">Contato</a></li>
+          </ul>
+        </div>
+
+        <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+        <label class="close-menu-label" for="close-menu" title="close menu"></label>
+
+        <aside class="menu">
+          <div class="main-content menu-content">
+            <nav>
+              <ul id="menu-items" onclick="document.getElementById('close-menu').checked = false;">
+
+              </ul>
+            </nav>
+          </div>
+        </aside>
+
+        <script>
+
+          const navItems = document.getElementById('nav-items').cloneNode(true);
+          const menuItems = document.getElementById('menu-items');
+
+
+          const itemTexts = ['Home', 'Procedimentos',  'Shop', 'Contato',];
+          const listItems = navItems.getElementsByTagName('li');
+
+          for (let i = 0; i < listItems.length; i++) {
+            const link = listItems[i].getElementsByTagName('a')[0];
+            link.textContent = itemTexts[i];
+          }
+
+          menuItems.appendChild(navItems);
+        </script>
+
+
+      </div>
+    </div>
+
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+
+      <div>
+       
+        <h1>Página em construção</h1>
+
+        <a href="https://wa.me/5579988381834?text=Ol%C3%A1%2C+gostaria+de+um+or%C3%A7amento+para+..." type="button"
+          class="cta">Saiba Mais</a>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
