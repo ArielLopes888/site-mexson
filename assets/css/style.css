@@ -33,8 +33,8 @@ img {
 }
 
 p {
-	color: black;
-	font-size: 1.4rem;
+	color: #bf8756;
+	font-size: 1.6rem;
 	margin-top: 5px;
 	line-height: 2.5rem;
 	font-weight: 300;
@@ -55,6 +55,10 @@ p {
 	color: #bf8756;
 }
 
+.p span {
+	color: #bf8756;
+}
+
 .logo-container {
 	text-align: center;
 }
@@ -70,7 +74,8 @@ p {
 	padding: 10px 30px;
 	color: white;
 	background-color: transparent;
-	border: 4px solid #bf8756;;
+	border: 4px solid #bf8756;
+	;
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
@@ -78,7 +83,8 @@ p {
 	border-radius: 15px;
 	/* animation: pulse 1s infinite; */
 }
-.cta-a{
+
+.cta-a {
 	background-color: #bf8756;
 	border-radius: 15px;
 }
@@ -93,7 +99,8 @@ p {
 .brand h1 {
 	font-size: 3rem;
 	text-transform: uppercase;
-	color: #bf8756;;
+	color: #bf8756;
+	;
 }
 
 .brand h1 span {
@@ -282,7 +289,7 @@ p {
 	width: 80%;
 	margin: 20px auto;
 	overflow: hidden;
-	border-radius: 10px;
+	border-radius: 30px;
 }
 
 #projects .project-info {
@@ -328,17 +335,6 @@ p {
 	position: relative;
 }
 
-/* #projects .project-img:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: 0.7;
-} */
-
 #projects .project-img img {
 	transition: 0.3s ease transform;
 }
@@ -351,120 +347,35 @@ p {
 
 /* About Section */
 #about .about {
-	background-color: #e4e3e1;;
-
-}
-
-#about .col-left {
-	width: 250px;
-	height: 360px;
-}
-
-#about .col-right {
-	width: 100%;
-}
-
-#about .col-right h2 {
-	font-size: 1.8rem;
-	font-weight: 500;
-	letter-spacing: 0.2rem;
-	margin-bottom: 10px;
-}
-
-#about .col-right h1 {
-	color: #bf8756;
-	margin-bottom: 20px;
-}
-
-#about .col-right p {
-	color: #bf8756;
-	margin-bottom: 20px;
-	right: -30px;
-
-}
-
-#about .col-right .cta {
-	color: #bf8756;
-	margin-bottom: 50px;
-	padding: 10px 20px;
-	font-size: 2rem;
-}
-
-#about .col-left .about-img {
-	height: 100%;
-	width: 100%;
-	position: relative;
-	border: 10px solid white;
-}
-
-#about .col-left .about-img::after {
-	content: '';
-	position: absolute;
-	left: -30px;
-	top: 15px;
-	height: 100%;
-	width: 100%;
-	border: 8px solid #592D14;;
-	z-index: -1;
-}
-
-/* End About Section */
-
-/* contact Section */
-#contact .contact {
-	flex-direction: column;
-	max-width: 1200px;
-	margin: 0 auto;
-	width: 90%;
-}
-
-#contact .contact-items {
-	/* max-width: 400px; */
-	width: 100%;
-}
-
-#contact .contact-item {
-	width: 80%;
-	padding: 20px;
+	background-color: #e4e3e1;
+	flex-direction: column-reverse;
 	text-align: center;
-	border-radius: 10px;
-	padding: 30px;
-	margin: 30px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	box-shadow: 0px 0px 18px 0 #0000002c;
-	transition: 0.3s ease box-shadow;
-}
 
-#contact .contact-item:hover {
-	box-shadow: 0px 0px 5px 0 #0000002c;
-}
-
-#contact .icon {
-	width: 70px;
 	margin: 0 auto;
-	margin-bottom: 10px;
+	padding: 100px 20px;
 }
 
-#contact .contact-info h1 {
-	font-size: 2.5rem;
-	font-weight: 500;
-	margin-bottom: 5px;
+.person-img img {
+	max-width: auto;
+	width: 250px;
+	height: auto;
+	margin-left: auto;
 }
 
-#contact .contact-info h2 {
-	font-size: 1.3rem;
-	line-height: 2rem;
-	font-weight: 500;
+.bordered-image {
+	border: 9px solid #ffffff;
+	border-radius: 10px;
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
 }
 
-/*End contact Section */
 
 /* Footer */
 #footer {
-	background-image: linear-gradient(60deg, #bfaca4 -70%, #592D14 100%);
+	background-image: linear-gradient(60deg, #bfaca4 -70%, #bf8756 100%);
+	text-align: center;
+	padding: 20px 0;
 }
 
 #footer .footer {
@@ -473,7 +384,46 @@ p {
 	padding-top: 50px;
 	padding-bottom: 10px;
 }
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo-container img {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.footer-contact {
+    text-align: right;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+}
+
+
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
 #footer h2 {
 	color: white;
 	font-weight: 500;
@@ -483,29 +433,20 @@ p {
 	margin-bottom: 10px;
 }
 
-#footer .social-icon {
-	display: flex;
-	margin-bottom: 30px;
-}
-
-#footer .social-item {
-	height: 50px;
-	width: 50px;
-	margin: 0 5px;
-}
-
-#footer .social-item img {
-	filter: grayscale(1);
-	transition: 0.3s ease filter;
-}
-
-#footer .social-item:hover img {
-	filter: grayscale(0);
-}
-
 #footer p {
 	color: white;
-	font-size: 1.3rem;
+	font-size:2rem;
+	margin: 0;
+	padding: 4rem;
+}
+
+
+#footer a {
+	color: white;
+	font-size: 1.5rem;
+}
+.heart {
+	color: #ff0202;
 }
 
 /* End Footer */
@@ -522,23 +463,7 @@ p {
 	}
 } */
 
-@keyframes pulse {
-	0% {
-		border-color: rgb(255, 255, 255);
-		;
-		/* Cor inicial */
-	}
 
-	50% {
-		border-color: transparent;
-		/* Cor que piscará */
-	}
-
-	100% {
-		border-color: rgb(255, 250, 255);
-		/* Cor final */
-	}
-}
 
 @keyframes text_reveal_box {
 	50% {
@@ -596,6 +521,7 @@ p {
 	/* Project */
 	#projects .project-item {
 		flex-direction: row;
+		border-radius: 30px;
 	}
 
 	#projects .project-item:nth-child(even) {
@@ -619,35 +545,6 @@ p {
 
 	/* End Project */
 
-	/* About */
-	#about .about {
-		flex-direction: row;
-	}
-
-	#about .col-left {
-		width: 600px;
-		height: 400px;
-		padding-left: 60px;
-	}
-
-	#about .about .col-left .about-img::after {
-		left: -35px;
-		top: 34px;
-		height: 98%;
-		width: 98%;
-		border: 10px solid #592D14;
-	}
-
-	#about .col-right {
-		text-align: left;
-		padding: 30px;
-	}
-
-	#about .col-right h1 {
-		text-align: left;
-	}
-
-	/* End About */
 
 	/* contact  */
 	#contact .contact {
@@ -725,12 +622,6 @@ p {
 	/* Define o layout flexível para o heroi */
 	#hero {
 		background-image: url(../img/teste.png);
-	}
-
-
-	#services .service-bottom .service-item {
-		flex-basis: 22%;
-		margin: 1.5%;
 	}
 }
 
