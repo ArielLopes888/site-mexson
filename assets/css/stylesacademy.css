@@ -35,8 +35,7 @@ img {
 p {
 	color: black;
 	font-size: 1.4rem;
-	margin-left: 20px; 
-    margin-right: 20px; 
+	margin-top: 5px;
 	line-height: 2.5rem;
 	font-weight: 300;
 	letter-spacing: 0.05rem;
@@ -53,8 +52,7 @@ p {
 }
 
 .section-title span {
-	color: #bf8756;
-	;
+	color: #bf8756;;
 }
 
 .logo-container {
@@ -70,19 +68,17 @@ p {
 .cta {
 	display: inline-block;
 	padding: 10px 30px;
-	color: #bf8756;
+	color: white;
 	background-color: transparent;
-	border: 4px solid #bf8756;
-	;
+	border: 4px solid #bf8756;;
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
 	margin-top: 30px;
 	border-radius: 15px;
-	animation: pulse 1s infinite;
+	/* animation: pulse 1s infinite; */
 }
-
-.cta-a {
+.cta-a{
 	background-color: #bf8756;
 	border-radius: 15px;
 }
@@ -97,8 +93,7 @@ p {
 .brand h1 {
 	font-size: 3rem;
 	text-transform: uppercase;
-	color: #bf8756;
-	;
+	color: #bf8756;;
 }
 
 .brand h1 span {
@@ -182,7 +177,7 @@ p {
 }
 
 #header .nav-list ul li:hover a {
-	color: #bf8756;
+	color: rgb(247, 137, 247);
 }
 
 /* End Header section */
@@ -243,7 +238,7 @@ p {
 	left: 0;
 	height: 100%;
 	width: 0;
-	background-color: #bf8756;
+	background-color: rgb(243, 95, 243);
 	/* animation: text_reveal_box 1s ease;
 	animation-delay: 0.5s; */
 }
@@ -343,7 +338,6 @@ p {
 	opacity: 0.7;
 } */
 
-
 #projects .project-img img {
 	transition: 0.3s ease transform;
 }
@@ -354,82 +348,6 @@ p {
 
 /* End Projects section */
 
-/* Procedure Section para telas grandes */
-#procedure .procedure {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 100px 20px;
-}
-
-/* Coluna esquerda */
-#procedure .col-left {
-    display: flex;
-    flex-direction: column; /* Empilha as imagens verticalmente */
-    gap: 20px;
-    width: 50%;
-}
-
-/* Card estilizado */
-#procedure .card {
-    border: 2px solid #bf8756; /* Cor da borda */
-    border-radius: 10px; /* Bordas arredondadas */
-    background-color: #e4e3e1; /* Cor de fundo do card */
-    overflow: hidden; /* Garante que a imagem não saia do card */
-    width: 80%;
-    min-width: 300px;
-    height: auto; /* Define a altura automática para ajustar à imagem */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Imagem dentro do card */
-#procedure .procedure-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Faz a imagem preencher o card */
-    border-radius: 8px; /* Bordas arredondadas */
-    display: block;
-}
-
-/* Coluna direita */
-#procedure .col-right {
-    width: 50%;
-}
-
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-    #procedure .procedure {
-        flex-direction: column; /* Empilha as colunas verticalmente */
-        padding: 50px 20px; /* Reduz o padding para dispositivos menores */
-    }
-
-    #procedure .col-left,
-    #procedure .col-right {
-        width: 100%; /* Colunas ocupam 100% da largura */
-    }
-
-    #procedure .col-left {
-        flex-direction: column; /* Mantém os cards empilhados em telas pequenas */
-    }
-
-    #procedure .card {
-        width: 80%; /* Card ocupa 100% da largura */
-        min-width: 100%; /* Garante que o card ocupe 100% da largura da coluna */
-        margin-bottom: 20px; /* Espaçamento entre os cards */
-    }
-
-    #procedure .procedure-img {
-        width: 100%;
-        height: auto; /* Ajusta a altura automaticamente com a largura */
-        object-fit: cover; /* Garante que a imagem preencha o card */
-    }
-}
-
-/* End About Section */
 
 /* contact Section */
 #contact .contact {
@@ -545,7 +463,7 @@ p {
 
 @keyframes pulse {
 	0% {
-		border-color: #bf8756;
+		border-color: rgb(247, 137, 247);
 		;
 		/* Cor inicial */
 	}
@@ -556,7 +474,7 @@ p {
 	}
 
 	100% {
-		border-color: #bf8756;
+		border-color: rgb(247, 137, 247);
 		/* Cor final */
 	}
 }
@@ -640,7 +558,7 @@ p {
 
 	/* End Project */
 
-
+	
 
 	/* contact  */
 	#contact .contact {
@@ -725,8 +643,6 @@ p {
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
-
-	/* End About */
 }
 
 /* End  Media Query For Desktop */
